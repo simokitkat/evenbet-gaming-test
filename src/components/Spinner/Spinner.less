@@ -1,0 +1,35 @@
+@import '../../global-styles.less';
+
+.spinner{
+    height: 147px;
+    padding-top: 32px;
+    margin-bottom: 24px;
+    text-align: center;
+
+    h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    }
+
+    .circle{
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        border-radius: 50%;
+
+        &.active{
+            animation: spin 5s linear  infinite ;
+        }
+    }
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
