@@ -10,6 +10,7 @@ function App() {
         avatar={info.avatar}
         stars={info.stars}
         userName={info.userName}
+        balance={info.balance}
       />
     </>
   );
