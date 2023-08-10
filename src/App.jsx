@@ -2,6 +2,9 @@ import PlayerInfo from "./components/PlayerInfo/PlayerInfo";
 import Spinner from "./components/Spinner/Spinner";
 import info from "./components/PlayerInfo/playerInformation";
 import Loader from "./components/Loader/Loader";
+import TournamentItem from "./components/TournamentItem/TournamentItem";
+import "./tournament-items.less";
+import { data } from "./data";
 
 function App() {
   return (
@@ -14,6 +17,13 @@ function App() {
         balance={info.balance}
       />
       <Loader />
+      <section className="tournament-items">
+        <div className="container">
+          {data.map((item, i) => {
+            return <TournamentItem key={i} {...item} />;
+          })}
+        </div>
+      </section>
     </>
   );
 }

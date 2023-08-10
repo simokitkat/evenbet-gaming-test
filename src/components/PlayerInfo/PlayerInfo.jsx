@@ -5,7 +5,7 @@ import openEye from "../../assets/visible.svg";
 import "./PlayerInfo.less";
 
 export default function PlayerInfo({ userName, stars, avatar, balance }) {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   return (
     <section className="player-info">
@@ -17,9 +17,9 @@ export default function PlayerInfo({ userName, stars, avatar, balance }) {
 
         <img src={avatar} alt="avatar" className="avatar" />
 
-        <div className="balance">
+        <div className={isVisible ? "balance shown" : "balance"} tabIndex={1}>
           <a className="eye" href="#" onClick={() => setIsVisible(!isVisible)}>
-            <img src={isVisible ? openEye : eye} alt="unvisible" />
+            <img src={!isVisible ? openEye : eye} alt="unvisible" />
           </a>
           <span>{isVisible ? balance : "show balance"}</span>
         </div>

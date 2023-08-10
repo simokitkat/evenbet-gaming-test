@@ -1,0 +1,171 @@
+@import '../../global-styles.less';
+
+.tournament-item{
+    width: 100%;
+    height: 78px;
+    padding: 8px 6px 8px 24px;
+    position: relative;
+    border-radius: 4px;
+    transition: 0.4s;
+    background-color: #373352;
+    margin-bottom: 4px;
+
+    &:hover{
+        background-color: #423D62;
+    }
+
+    &.pressed{
+        background-color: #2F2B47;
+    }
+
+    &:focus{
+        background-color: #443E73;
+    }
+
+    .reg-status{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 78px;
+        height: 16px;
+        padding: 2px;
+        transform: rotate(270deg) translate(-31px,-31px);
+        text-align: center;
+        font-size: 8px;
+        font-weight: 600;
+        text-transform: uppercase;
+        background: #5E5A79;
+        border-radius: 4px 4px 0px 0px;
+        border: none;
+        color: white;
+        font-family: Montserrat;
+       
+
+        &.active{
+            background: #00BB40;
+        }
+    }
+}
+
+.top{
+    height: 40px;
+    margin-bottom: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left{
+    
+        .details{
+            height: 16px;
+            margin-bottom: 9px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            .tag{
+                height: 100%;
+                padding: 3px;
+                border-radius: 2px;
+                border: 1px solid #FFF;
+                opacity: 0.7;
+                text-align: center;
+                font-size: 8px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            .other-icons{
+                display: flex;
+                height: 100%;
+                align-items: center;
+                gap: 4px;
+            }
+        }
+
+        h2{
+            font-size: 12px;
+            font-weight: 600;
+
+            &.green{
+                color: #86FF8B;
+            }
+
+            &.yellow{
+                color: #FAFF1A;
+            }
+        }
+    }
+
+    .right{
+        button{
+            width: 80px;
+            height: 34px;
+            padding: 11.05px 2.909px;
+            border: none;
+            border-radius: 4px;
+            background: #00BB40;
+            color: white;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: 0.4s;
+            cursor: pointer;
+
+            &.grey{
+            background: rgba(255, 255, 255, 0.15);
+            color: rgba(255, 255, 255, 0.30);
+            pointer-events: none;
+            }
+
+            &:hover{
+                background-color: #43CE72;
+            }
+
+            &:active,
+            &:focus{
+                background-color: #0E8938;
+            }
+        }
+    }
+}
+
+.bottom{
+    height: 14px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .time{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        span{
+            color: rgba(255, 255, 255, 0.70);
+            font-size: 10px;
+            font-weight: 500;
+        }
+    }
+
+    .stats{
+        width: calc(100% - 134px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &>div{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            span{
+                color: rgba(255, 255, 255, 0.70);
+                font-size: 10px;
+                font-weight: 500;
+            }
+        }
+    }
+}

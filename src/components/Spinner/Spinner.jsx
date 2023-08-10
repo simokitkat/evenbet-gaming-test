@@ -1,15 +1,19 @@
 import "./Spinner.less";
 import spinnerIMG from "../../assets/spiner.svg";
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const screenWidthContext = createContext();
 
 export default function Spinner() {
   const [isResized, setIsResized] = useState(false);
 
-  window.onresize = function () {
-    setIsResized(true);
-  };
+  useEffect(() => {
+    function handleWidthChange() {
+      setIsResized(true);
+    }
+
+    window.addEventListener("resize", handleWidthChange);
+  });
 
   return (
     <screenWidthContext.Provider value={{ isResized }}>
