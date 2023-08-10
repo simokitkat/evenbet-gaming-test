@@ -1,8 +1,45 @@
-# React + Vite
+## Условия:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Окружение
 
-Currently, two official plugins are available:
+Для выполнения используются react и less, остальное - по желанию.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Дизайн
+
+[В фигме](<https://www.figma.com/file/ivI36J6rG51AMnwptBsh3P/sample-(Copy)?node-id=6%3A9461&mode=dev>)
+
+#### React
+
+- Без библиотек, расширение файлов \*.jsx
+- На выходе должны получить 4 компонента: spinner, playerInfo, loader и tournamentItem и файл где все это собрано
+- Все данные внутрь компонента передаются через пропсы, данные о турнирах берутся из .js или .json файла.
+- Состояние компонента, при необходимости, передается через пропсы.
+- Спиннер и прогресс бар должны анимироваться при изменении ширины.
+
+#### Верстка
+
+- Расширение файлов стилей \*.less
+- Единица измерения - px
+- Нужно использовать pixelperfect
+- Использовать изображения только там где без этого не обойтись
+- Использование flex
+- Все элементы должны быть защищены от переполнения контентом
+- Не использовать position: absolute без необходимости
+- У всех элементов которые имеют дизайн для состояний наведений и нажатия необходимо их сделать
+- tournamentItem должны тянутся по ширине – изменение ширины всего списка не должно их ломать
+
+### Время выполнения
+
+Два часа на верстку. Подготовка окружения не входит в задачу.
+
+## Фактическое время выполнения теста:
+
+Приблизительно 10 часов (не только вёрстка а всё в целом).
+
+### Cсылка на деплой:
+
+[evenbet-gaming-test](https://evenbet-gaming-test.netlify.app)
+
+### Замечания:
+
+дезайн тестовый и он создан под мобильные экраны, поэтому лучше его проверить на соответствуещей ширине
