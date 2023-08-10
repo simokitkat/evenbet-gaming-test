@@ -1,7 +1,7 @@
 const info = {
   userName: "LongUserName",
-  stars: "./src/assets/stars.svg",
-  avatar: "./src/assets/avatar.png",
+  stars: "assets/stars.svg",
+  avatar: "assets/avatar.png",
   balance: "$100,500.00",
 };
 
