@@ -1,3 +1,10 @@
+import knockOut from "../../assets/Knockout.svg";
+import bounty from "../../assets/Bounty.svg";
+import proBounty from "../../assets/ProBounty.svg";
+import freeRoll from "../../assets/FreeRoll.svg";
+import rapid from "../../assets/Rapid.svg";
+import stopWatch from "../../assets/stopWatch.svg";
+
 const data = [
   {
     isRegistered: true,
@@ -27,7 +34,8 @@ const data = [
     isPinned: true,
     tag: "NL OFC/pineapple prg",
     isOtherIcons: true,
-    otherIcons: ["./src/assets/stopWatch.svg", "./src/assets/FreeRoll.svg"],
+    // otherIcons: ["./src/assets/stopWatch.svg", "./src/assets/FreeRoll.svg"],
+    otherIcons: [stopWatch, freeRoll],
     tournament: "Hourly Freeroll",
     dateTime: "12:00 pm, 28 July",
     playersNumber: "1/10 000",
@@ -49,7 +57,8 @@ const data = [
     isPinned: false,
     tag: "NL 6 cards omaha h/l",
     isOtherIcons: true,
-    otherIcons: ["./src/assets/Rapid.svg"],
+    // otherIcons: ["./src/assets/Rapid.svg"],
+    otherIcons: [rapid],
     tournament: "PL Omaha Knockout",
     tournamentColor: "yellow",
     dateTime: "12:00 pm, 28 July",
