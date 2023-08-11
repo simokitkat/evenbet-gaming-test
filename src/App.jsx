@@ -1,10 +1,10 @@
 import PlayerInfo from "./components/PlayerInfo/PlayerInfo";
 import Spinner from "./components/Spinner/Spinner";
-import info from "./components/PlayerInfo/playerInformation";
+import info from "./playerInformation";
 import Loader from "./components/Loader/Loader";
 import TournamentItem from "./components/TournamentItem/TournamentItem";
 import "./tournament-items.less";
-import { data } from "./components/TournamentItem/data";
+import data from "./data";
 
 function App() {
   return (

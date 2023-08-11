@@ -1,4 +1,4 @@
-export const data = [
+const data = [
   {
     isRegistered: true,
     isPinned: true,
@@ -68,3 +68,5 @@ export const data = [
     tropheysNumber: "1000000",
   },
 ];
+
+export default data;
